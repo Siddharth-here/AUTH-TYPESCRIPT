@@ -1,9 +1,9 @@
 import { createServer } from 'node:http'
-import { createApplication } from './app/index.js'
+import {createApplication} from "./app/index.js"
 
 async function main() {
     try {
-        const server = createServer()
+        const server = createServer(createApplication())
         const PORT: number = 8080
 
         server.listen(PORT, () => {
