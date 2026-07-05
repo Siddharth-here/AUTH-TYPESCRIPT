@@ -7,5 +7,5 @@ const auththenticationController = new AuthenticationController()
 
 export const authRouter: Router = express.Router()
 
-//
+//route registered
 authRouter.post('/sign-up', auththenticationController.handleSignup.bind(AuthenticationController))
